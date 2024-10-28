@@ -39,6 +39,7 @@
             return { locality: data.locality || 'Unknown', index };
         }
         // use for loop to grab the cordinates and fix the rest
+        // if there is time, check over this, mapping looks off
         async function addMarkers() {
             const markersInfo = document.getElementById('markers-info');
             for (let i = 0; i < coordinates.length; i++) {
